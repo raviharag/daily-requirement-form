@@ -1,0 +1,123 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Daily Requirement Form</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      background: url('background.jpg') no-repeat center center fixed;
+      background-size: cover;
+    }
+
+    .overlay {
+      backdrop-filter: blur(8px);
+      background-color: rgba(255, 255, 255, 0.85);
+      padding: 40px;
+      min-height: 100vh;
+    }
+
+    .form-container {
+      max-width: 700px;
+      margin: auto;
+      background-color: white;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    }
+
+    .logo {
+      display: block;
+      margin: 0 auto 30px auto;
+      width: 200px;
+    }
+
+    h2 {
+      text-align: center;
+      color: #004080;
+    }
+
+    label {
+      font-weight: bold;
+      display: block;
+      margin-top: 20px;
+    }
+
+    input[type="text"], input[type="date"], input[type="number"] {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+    }
+
+    button {
+      margin-top: 30px;
+      width: 100%;
+      padding: 12px;
+      background-color: #004080;
+      color: white;
+      border: none;
+      font-size: 16px;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #003366;
+    }
+
+    .footer {
+      text-align: center;
+      margin-top: 40px;
+      color: #666;
+      font-size: 14px;
+    }
+
+    table {
+      width: 100%;
+      margin-top: 20px;
+      border-collapse: collapse;
+    }
+
+    th, td {
+      padding: 10px;
+      text-align: left;
+    }
+
+    th {
+      background-color: #f2f2f2;
+    }
+  </style>
+</head>
+<body>
+  <div class="overlay">
+    <div class="form-container">
+      <img src="laugfs-tyre-logo.png" alt="Laugfs Logo" class="logo">
+      <h2>Daily Requirement Submission</h2>
+      <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+        <label for="supervisor">Supervisor Name:</label>
+        <input type="text" name="Supervisor" required>
+
+        <label for="date">Date:</label>
+        <input type="date" name="Date" required>
+
+        <label>GNM</label>
+        <input type="number" name="GNM Balance" placeholder="Balance" required>
+        <input type="number" name="GNM Required" placeholder="Required" required>
+
+        <label>NM</label>
+        <input type="number" name="NM Balance" placeholder="Balance" required>
+        <input type="number" name="NM Required" placeholder="Required" required>
+
+        <button type="submit">Submit to My Email</button>
+      </form>
+
+      <div class="footer">
+        &copy; 2025 Laugfs Corporation. All rights reserved.
+      </div>
+    </div>
+  </div>
+</body>
+</html>
